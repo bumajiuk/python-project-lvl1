@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 from random import randint
-import random
 import prompt
 from brain_games.games.settings import games_ctn
 
@@ -20,7 +19,7 @@ def calc(user_name):
         elif random_number_action == 3:
             random_number_action = '*'
             result = random_number_a * random_number_b
-        
+
         print('Question: {} {} {}'.format(random_number_a, random_number_action, random_number_b))
         user_answer = prompt.string('Your answer: ')
         if str(user_answer) == str(result):
