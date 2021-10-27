@@ -23,10 +23,10 @@ def prime(user_name):
         answer = is_prime(a)
         print('Question: {}'.format(a))
         user_answer = prompt.string('Your answer: ')
-        if (answer == True) and (user_answer == 'yes'):
+        if (answer is True) and (user_answer == 'yes'):
             print('Correct!')
             i += 1
-        elif (answer == False) and (user_answer == 'no'):
+        elif (answer is False) and (user_answer == 'no'):
             print('Correct!')
             i += 1
         else:
